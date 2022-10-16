@@ -1,0 +1,1 @@
+ require('cordova/exec/proxy').add('HappyFunSundaySession', module.exports);
