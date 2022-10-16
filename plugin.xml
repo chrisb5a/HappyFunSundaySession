@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-HappyFunSundaySession" version="1.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>HappyFunSundaySession</name>
+    <js-module name="HappyFunSundaySession" src="www/HappyFunSundaySession.js">
+        <clobbers target="HappyFunSundaySession" />
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="HappyFunSundaySession">
+                <param name="ios-package" value="HappyFunSundaySession" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/HappyFunSundaySession.swift" />
+    </platform>
+</plugin>
