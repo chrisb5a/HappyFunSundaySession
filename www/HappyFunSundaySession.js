@@ -3,8 +3,8 @@ exports.echo = function(arg0, success, error) {
   exec(success, error, 'HappyFunSundaySession', 'echo', [arg0]);
 };
 
-module.exports.adds = function (arg0, success, error) {
-    exec(success, error, 'HappyFunSundaySession', 'adds', [arg0]);
+module.exports.adds = function (arg0, arg1, success, error) {
+    exec(success, error, 'HappyFunSundaySession', 'adds', [arg0, arg1]);
 };
 
 exports.echojs = function(arg0, success, error) {
