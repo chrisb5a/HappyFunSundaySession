@@ -48,7 +48,8 @@
         let param1 = command.arguments[0] as? Int ?? 0
         let param2 = command.arguments[1] as? Int ?? 0
 
-        if let p1 = param1 , let p2 = param2 {
+         let p1 = param1 
+         let p2 = param2 
             if p1 >= 0 && p2 >= 0{
                 let total = String(p1 + p2)
 
@@ -82,7 +83,7 @@
                 pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR,
                                                messageAs: "Something wrong")
             }
-        }
+        
         self.commandDelegate!.send(pluginResult,
                                    callbackId: command.callbackId)
     }
