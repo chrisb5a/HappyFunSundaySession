@@ -42,8 +42,11 @@
   
   @objc(adds:) func adds(_ command: CDVInvokedUrlCommand) {
         var pluginResult = CDVPluginResult(status: CDVCommandStatus_ERROR)
-        let param2 = (command.arguments[0] as? NSObject)?.value(forKey: "param1") as? Int
-        let param1 = (command.arguments[1] as? NSObject)?.value(forKey: "param2") as? Int
+        //let param2 = (command.arguments[0] as? NSObject)?.value(forKey: "param2") as? Int
+        //let param1 = (command.arguments[1] as? NSObject)?.value(forKey: "param1") as? Int
+
+        let param1 = command.arguments[0] as? Int ?? 0
+        let param1 = command.arguments[1] as? Int ?? 0
 
         if let p1 = param1 , let p2 = param2 {
             if p1 >= 0 && p2 >= 0{
