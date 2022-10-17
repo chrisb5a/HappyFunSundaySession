@@ -4,6 +4,7 @@ Cordova Basic Plugin
 
 1) The plugin has two functions:
   => echo with alert
+  
   => simple addition
 
 2) The plugin has two platform enabled:
