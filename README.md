@@ -3,15 +3,19 @@
 Cordova Basic Plugin
 
 1) The plugin has two functions:
+
   => echo with alert
   
   => simple addition
 
 2) The plugin has two platform enabled:
+
   => ios 
+  
   => web browser
   
 3) The plugin is written in Js and Swift: 
+
   => to run on simulator, for testApp, after commmand:   
   
    cordova plugin add repo or path
@@ -23,6 +27,7 @@ Cordova Basic Plugin
  Reason: this takes care of bridging between swift and javascript else build fails 
  
  4) In the testApp:
+ 
     => For ios platform:
      - in www/js/index.js :
      
@@ -53,7 +58,8 @@ function onDeviceReady() {
 
 
 }
-    
+
+
   => For browser platform:
      - in www/js/index.js :
      
